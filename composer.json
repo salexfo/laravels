@@ -21,7 +21,9 @@
         "itsgoingd/clockwork": "^3.1",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^2.0",
-        "phpunit/phpunit": "^7.0"
+        "phpunit/phpunit": "^7.0",
+	"dacastro4/laravel-gmail": "^0.4",
+	"cache/filesystem-adapter": "1.0.*"
     },
     "config": {
         "optimize-autoloader": true,
