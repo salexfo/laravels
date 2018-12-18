@@ -13,12 +13,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('gmail');
 });
 
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/gmail', 'GmailController@index')->name('Gmail');
 Route::get('foo', function () {
     return 'Hello World';
 });
