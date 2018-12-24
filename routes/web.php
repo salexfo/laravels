@@ -22,8 +22,8 @@ Route::get('/gmail', 'GmailController@index')->name('Gmail');
 Route::get('foo', function () {
     return 'Hello World';
 });
-Route::get('user', 'UsersController@index');
 Route::get('users', 'UsersController@index');
+Route::get('user', 'UsersController@user');
 
 Route::get('/oauth/gmail', function (){
 	return LaravelGmail::redirect();

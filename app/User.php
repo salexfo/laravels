@@ -1,30 +1,11 @@
 <?php
-
 namespace App;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-
-class User extends Authenticatable
+class User extends Eloquent
 {
-    use Notifiable;
+	const CREATED_AT = 'created_on_timestamp';
+	const UPDATED_AT = 'last_updated_on_timestamp';
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
 }
+
